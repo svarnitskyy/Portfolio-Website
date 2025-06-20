@@ -30,6 +30,7 @@ import {
   Tooltip
 } from "@mantine/core";
 
+
 const CONTAINER_SIZES: Record<string, string> = {
   xxs: rem("200px"),
   xs: rem("300px"),
@@ -107,7 +108,7 @@ export const shadcnTheme: MantineThemeOverride = createTheme({
   primaryShade: {"light":8,"dark":0},
   autoContrast: true,
   luminanceThreshold: 0.3,
-  fontFamily: "Geist",
+  fontFamily: "Geist Sans",
   radius: {
     xs: rem("6px"),
     sm: rem("8px"),
@@ -148,7 +149,7 @@ export const shadcnTheme: MantineThemeOverride = createTheme({
   },
 
   headings: {
-    fontFamily: "Geist",
+    fontFamily: "Geist Sans",
     sizes: {
       h1: {
         fontSize: rem("36px"),

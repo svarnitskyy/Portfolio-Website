@@ -1,14 +1,15 @@
-import { Text, Title } from '@mantine/core';
+import {Box, Text, Title} from '@mantine/core';
 
 export function Welcome() {
   return (
-    <>
+    <Box>
       <Title ta="center" mt={100}>
-        Welcome to{' '}
+          Hey! My name is {' '}
         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-          Svyatoslav Varnitskyy
+          Svet.
         </Text>
+          {' '}I am a software engineer.
       </Title>
-    </>
+    </Box>
   );
 }
