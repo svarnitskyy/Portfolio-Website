@@ -2,8 +2,8 @@ import {Button, Grid, Group, Image, Divider} from '@mantine/core';
 
 export function Navbar() {
   return (
-      <div style={{justifyItems: 'center'}}>
-          <div style={{width:'90%'}}>
+      <div style={{justifyItems: 'center', position: 'sticky', zIndex: 10000, width: '100%', top: '0px', backdropFilter: 'blur(5px)'}}>
+          <div style={{width:'100%'}}>
               <Grid align='center'>
                   <Grid.Col span="auto" style={{ textAlign: 'left', marginLeft: '100px' }}>
                       <Button variant="subtle">
@@ -12,7 +12,7 @@ export function Navbar() {
                   </Grid.Col>
                   <Grid.Col span={6}>
                       <Group justify="center">
-                          <Button variant="subtle">Home</Button>
+                          <a href="#top"><Button variant="subtle">Home</Button></a>
                           <Button variant="subtle">Experience</Button>
                           <Button variant="subtle">Projects</Button>
                       </Group>

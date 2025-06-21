@@ -1,6 +1,6 @@
 import '@mantine/core/styles.css';
 
-import { MantineProvider } from '@mantine/core';
+import {Container, MantineProvider} from '@mantine/core';
 import { shadcnCssVariableResolver } from '@/cssVariableResolver';
 import { Router } from './Router';
 import { shadcnTheme } from './theme';
@@ -18,8 +18,10 @@ export default function App() {
       theme={shadcnTheme}
       cssVariablesResolver={shadcnCssVariableResolver}
     >
-      <Navbar />
-      <Router />
+      <Container px="xl" size="xl">
+        <Navbar />
+        <Router />
+      </Container>
     </MantineProvider>
   );
 }
