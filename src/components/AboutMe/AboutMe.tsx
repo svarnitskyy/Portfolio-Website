@@ -1,31 +1,29 @@
 import { Center, Grid, Image, Text, Title } from '@mantine/core';
 
+import './AboutMe.css';
+
 export function AboutMe() {
   return (
     <div className="AboutMe" style={{ width: '100%' }}>
-      <Title style={{ textAlign: 'center', marginBottom: '10px'}}>About Me</Title>
+      <Title style={{ textAlign: 'center', marginBottom: '10px' }}>About Me</Title>
       <Grid className="AboutMeContainer">
-        <Grid.Col className="AboutMeLeftContainer" span={6} px={50}>
-          <Image
-            src="./src/self.jpg"
-            radius="md"
-            h={400}
-            style={{
-              border: '3px solid var(--mantine-primary-color-contrast)',
-              borderRadius: 'var(--mantine-radius-md)',
-            }}
-          />
+        <Grid.Col
+          className="AboutMeLeftContainer"
+          span={{ base: 12, md: 6 }}
+          style={{ display: 'flex', alignItems: 'stretch' }}
+          px={50}
+        >
+          <Image src="./src/self.jpg" className="imagebox" />
         </Grid.Col>
-        <Grid.Col className="AboutMeRightContainer" span={6} px={50}>
-          <Center
-            h={400}
-            style={{
-              border: '3px solid var(--mantine-primary-color-contrast)',
-              borderRadius: 'var(--mantine-radius-md)',
-              padding: '1rem',
-            }}
-          >
-            <Text>
+
+        <Grid.Col
+          className="AboutMeRightContainer"
+          span={{ base: 12, md: 6 }}
+          style={{ display: 'flex', alignItems: 'stretch' }}
+          px={50}
+        >
+          <Center className="textbox">
+            <Text className="responsive-text">
               I'm a recent software engineering graduate from Iowa State University with a strong
               passion for full-stack development, especially building web applications. I’ve
               completed two internships at John Deere, served as treasurer of the Iowa State
