@@ -59,7 +59,7 @@ export function Welcome() {
 
   return (
     <Center style={{ height: '100vh' }} id="top">
-      <Title ta="center" mt={100}>
+      <Title ta="center">
         {renderWithGradient(text)}
       </Title>
     </Center>

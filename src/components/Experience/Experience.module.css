@@ -1,0 +1,134 @@
+.textbox {
+    border: 3px solid var(--mantine-primary-color-contrast);
+    border-radius: var(--mantine-radius-md);
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    word-break: break-word;
+    width: 100%;
+    height: auto;
+    flex: 1;
+    flex-direction: column;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.textbox:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+
+.textbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, #00ffe7, #3d8bfd, #ff4cfb);
+    filter: blur(6px);
+    opacity: 1;
+    mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    transition: opacity 0.3s ease;
+    animation: pulseBorder 2s ease-in-out infinite;
+}
+
+.textbox:hover::before {
+    opacity: 1;
+}
+
+@keyframes pulseBorder {
+    0%, 100% {
+        filter: blur(4px);
+        opacity: 0.6;
+    }
+    50% {
+        filter: blur(6px);
+        opacity: 1;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .textbox {
+        height: auto;
+        overflow-y: auto;
+    }
+}
+
+
+
+.imagebox {
+    border: 2px solid var(--mantine-primary-color-contrast);
+    border-radius: var(--mantine-radius-md);
+    padding: 0.5rem;
+    box-sizing: border-box;
+    max-width: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.imagebox img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: var(--mantine-radius-sm);
+}
+
+.ExperienceContainer {
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.responsive-text {
+    font-size: 1.125rem;
+}
+
+.textwrapper {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .responsive-text {
+        font-size: 0.875rem;
+    }
+}
+.experiencegrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+@media (max-width: 768px) {
+    .experiencegrid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textbox {
+        max-width: 90%;
+    }
+}

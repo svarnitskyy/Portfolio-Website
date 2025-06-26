@@ -4,23 +4,21 @@ import './AboutMe.css';
 
 export function AboutMe() {
   return (
-    <div className="AboutMe" style={{ width: '100%' }}>
+    <div className="AboutMe" style={{ width: '100%', justifyContent: 'center', alignItems: 'center' }}>
       <Title style={{ textAlign: 'center', marginBottom: '10px' }}>About Me</Title>
       <Grid className="AboutMeContainer">
         <Grid.Col
           className="AboutMeLeftContainer"
           span={{ base: 12, md: 6 }}
           style={{ display: 'flex', alignItems: 'stretch' }}
-          px={50}
         >
-          <Image src="./src/self.jpg" className="imagebox" />
+          <Image src="./src/Images/self.jpg" className="imagebox" />
         </Grid.Col>
 
         <Grid.Col
           className="AboutMeRightContainer"
           span={{ base: 12, md: 6 }}
           style={{ display: 'flex', alignItems: 'stretch' }}
-          px={50}
         >
           <Center className="textbox">
             <Text className="responsive-text">

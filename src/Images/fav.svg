@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <!-- Grid pattern -->
+    <pattern id="vGridSmall" patternUnits="userSpaceOnUse" width="2" height="2">
+      <path d="M2 0 L0 0 0 2" stroke="black" stroke-width="0.25"></path>
+    </pattern>
+
+    <!-- Shadow filter -->
+    <filter id="shadowSmall" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="1" dy="1" stdDeviation="0.5" flood-color="black" flood-opacity="0.3"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- White Border -->
+  <path d="M16 8 L32 56 L48 8 L44 8 L32 44 L20 8 Z" fill="none" stroke="white" stroke-width="4" filter="url(#shadowSmall)"></path>
+
+  <!-- Grid-filled V -->
+  <path d="M16 8 L32 56 L48 8 L44 8 L32 44 L20 8 Z" fill="url(#vGridSmall)" stroke="black" stroke-width="1"></path>
+</svg>
