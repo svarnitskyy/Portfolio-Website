@@ -1,27 +1,27 @@
 import { Center, Grid, Image, Text, Title } from '@mantine/core';
+import styles from './AboutMe.module.css';
 
-import './AboutMe.css';
 
 export function AboutMe() {
   return (
-    <div className="AboutMe" style={{ width: '100%', justifyContent: 'center', alignItems: 'center' }}>
+    <div style={{ width: '100%', justifyContent: 'center', alignItems: 'center' }}>
       <Title style={{ textAlign: 'center', marginBottom: '10px' }}>About Me</Title>
       <Grid className="AboutMeContainer">
         <Grid.Col
-          className="AboutMeLeftContainer"
+          className={styles.AboutMeLeftContainer}
           span={{ base: 12, md: 6 }}
           style={{ display: 'flex', alignItems: 'stretch' }}
         >
-          <Image src="./src/Images/self.jpg" className="imagebox" />
+          <Image src="./src/Images/self.jpg" className={styles.imagebox} />
         </Grid.Col>
 
         <Grid.Col
-          className="AboutMeRightContainer"
+          className={styles.AboutMeRightContainer}
           span={{ base: 12, md: 6 }}
           style={{ display: 'flex', alignItems: 'stretch' }}
         >
-          <Center className="textbox">
-            <Text className="responsive-text">
+          <Center className={styles.textbox}>
+            <Text className={styles.responsiveText}>
               I'm a recent software engineering graduate from Iowa State University with a strong
               passion for full-stack development, especially building web applications. I’ve
               completed two internships at John Deere, served as treasurer of the Iowa State
