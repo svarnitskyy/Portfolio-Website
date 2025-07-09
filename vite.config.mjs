@@ -9,5 +9,5 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './vitest.setup.mjs',
   },
-  base: '/Portfolio-Website'
+  base: '/Portfolio-Website/'
 });
