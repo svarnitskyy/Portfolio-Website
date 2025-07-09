@@ -35,11 +35,11 @@ export function Navbar() {
                 Skills
               </Button>
             </a>
-            <a href="#contact">
-              <Button variant="subtle" size={buttonSize}>
-                Contact
-              </Button>
-            </a>
+            {/*<a href="#contact">*/}
+            {/*  <Button variant="subtle" size={buttonSize}>*/}
+            {/*    Contact*/}
+            {/*  </Button>*/}
+            {/*</a>*/}
           </Flex>
         </Box>
       </Flex>
