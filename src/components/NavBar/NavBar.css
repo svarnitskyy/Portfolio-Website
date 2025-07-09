@@ -5,8 +5,9 @@
     padding: 0.5rem 1rem;
     position: absolute;
     width: 80vw;
-    justify-self: center;
-    align-self: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
     border: 3px solid transparent;
     border-radius: var(--mantine-radius-md);
 }
