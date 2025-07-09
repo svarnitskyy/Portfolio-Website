@@ -12,7 +12,7 @@ export function Navbar() {
                 {!isMobile && (
                     <Box className="logo">
                         <Button variant="subtle">
-                            <Image src="./src/Images/favicon.svg" h={40} fit="contain" />
+                            <Image src="/Portfolio-Website/Images/favicon.svg" h={40} fit="contain" />
                         </Button>
                     </Box>
                 )}

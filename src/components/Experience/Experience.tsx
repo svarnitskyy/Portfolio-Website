@@ -13,7 +13,7 @@ export function Experience() {
         'Improved UX and code quality by collaborating on system design and iterating on\n' +
           '                  cross-team feedback.',
       ],
-      image: './src/Images/John_Deere_logo.png',
+      image: "/Portfolio-Website/Images/John_Deere_logo.png",
     },
     {
       employer: 'John Deere',
@@ -25,7 +25,7 @@ export function Experience() {
         'Developed SAP BTP tool with team members to enforce security settings and ensure\n' +
           '                    policy compliance.'
       ],
-      image: './src/Images/John_Deere_logo.png',
+      image: "/Portfolio-Website/Images/John_Deere_logo.png",
     },
   ];
 

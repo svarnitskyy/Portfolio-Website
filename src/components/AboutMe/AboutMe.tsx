@@ -12,7 +12,7 @@ export function AboutMe() {
           span={{ base: 12, md: 6 }}
           style={{ display: 'flex', alignItems: 'stretch' }}
         >
-          <Image src="./src/Images/self.jpg" className={styles.imagebox} />
+          <Image src="/Portfolio-Website/Images/self.JPG" className={styles.imagebox} />
         </Grid.Col>
 
         <Grid.Col
