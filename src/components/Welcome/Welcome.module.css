@@ -3,8 +3,29 @@
   font-size: rem(100px);
   font-weight: 900;
   letter-spacing: rem(-2px);
+  max-width: 600px;
+  min-height: 4.5rem;
+  line-height: 1.2;
+  text-align: center;
 
   @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(50px);
   }
+}
+.welcome {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: var(--mantine-radius-md);
+  overflow: hidden;
+  background:
+          linear-gradient(#000, #000) padding-box,
+          linear-gradient(135deg, #ff00cc, #3333ff) border-box;
+
+  box-shadow: 0 0 20px 5px rgba(255, 0, 204, 0.4), 0 0 40px 10px rgba(51, 51, 255, 0.3);
 }

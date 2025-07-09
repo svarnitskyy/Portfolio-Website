@@ -18,8 +18,7 @@ export default function App() {
       theme={shadcnTheme}
       cssVariablesResolver={shadcnCssVariableResolver}
     >
-      <Container px="xl" size="xl">
-        <Navbar />
+      <Container  size="xl">
         <Router />
       </Container>
     </MantineProvider>

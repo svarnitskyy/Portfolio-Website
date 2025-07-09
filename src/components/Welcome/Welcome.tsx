@@ -1,5 +1,7 @@
 import { useTypewriter } from 'react-simple-typewriter';
 import { Center, Text, Title } from '@mantine/core';
+import styles from './Welcome.module.css';
+import {Navbar} from "@/components/NavBar/NavBar";
 
 export function Welcome() {
   const [text] = useTypewriter({
@@ -58,10 +60,14 @@ export function Welcome() {
   }
 
   return (
-    <Center style={{ height: '100vh' }} id="top">
-      <Title ta="center">
-        {renderWithGradient(text)}
-      </Title>
-    </Center>
+      <div>
+        <Navbar />
+        <Center className={styles.welcome}>
+          <Title ta="center">
+            {renderWithGradient(text)}
+          </Title>
+        </Center>
+      </div>
+
   );
 }

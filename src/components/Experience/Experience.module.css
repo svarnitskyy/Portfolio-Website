@@ -1,5 +1,5 @@
 .textbox {
-    border: 3px solid var(--mantine-primary-color-contrast);
+    border: 3px solid transparent;
     border-radius: var(--mantine-radius-md);
     padding: 1rem;
     box-sizing: border-box;
