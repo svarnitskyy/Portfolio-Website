@@ -47,7 +47,7 @@ export function Experience() {
   });
 
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: '100%' }} id='experience'>
       <Title style={{ textAlign: 'center', margin: '20px 20px' }}>Experience</Title>
       <div className={styles.experiencegrid}>{employers}</div>
     </div>

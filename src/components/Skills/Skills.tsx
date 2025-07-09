@@ -73,7 +73,7 @@ export function Skills() {
   });
 
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: '100%' }} id='skills'>
       <Title style={{ textAlign: 'center', margin: '20px 20px' }}>Skills</Title>
       <div className={styles.experienceGrid}>{skillCategories}</div>
     </div>

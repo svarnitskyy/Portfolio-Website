@@ -19,6 +19,7 @@
 
 .logo {
     flex-shrink: 0;
+    position: fixed;
 }
 
 .nav-links-wrapper {

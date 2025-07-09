@@ -5,7 +5,7 @@ import styles from './AboutMe.module.css';
 export function AboutMe() {
   return (
     <div style={{ width: '100%', justifyContent: 'center', alignItems: 'center' }}>
-      <Title style={{ textAlign: 'center', marginBottom: '10px' }}>About Me</Title>
+      <Title style={{ textAlign: 'center', margin: '20px' }} id='aboutme'>About Me</Title>
       <Grid className="AboutMeContainer">
         <Grid.Col
           className={styles.AboutMeLeftContainer}
