@@ -6,6 +6,7 @@
     position: absolute;
     width: 80vw;
     justify-self: center;
+    align-self: center;
     border: 3px solid transparent;
     border-radius: var(--mantine-radius-md);
 }
