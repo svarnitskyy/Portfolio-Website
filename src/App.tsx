@@ -17,7 +17,7 @@ export default function App() {
 
     >
       <Container style={{
-        backgroundImage: "url('/Images/background.svg')",
+        backgroundImage: "url('/Portfolio-Website/Images/background.svg')",
         backgroundRepeat: 'repeat',
         backgroundSize: '100px',
         backgroundColor: '#121212',
