@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  <defs>
+    <!-- Very dark grid inside the V -->
+    <pattern id="innerGrid" patternUnits="userSpaceOnUse" width="3" height="3">
+      <path d="M3 0 L0 0 0 3" stroke="#1a1a1a" stroke-width="0.25"></path>
+    </pattern>
+
+    <!-- Soft shadow for separation -->
+    <filter id="shadowSmall" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="1" dy="1" stdDeviation="0.5" flood-color="black" flood-opacity="0.2"></feDropShadow>
+    </filter>
+
+    <!-- Tight diamond repeat pattern -->
+    <pattern id="tightDiamondPattern" width="50" height="50" patternUnits="userSpaceOnUse">
+      <g transform="translate(25,25) rotate(-45)">
+        <!-- Outer stroke of the V (very dark) -->
+        <path d="M-7.5 -15 L0 15 L7.5 -15 L6 -15 L0 9 L-6 -15 Z" fill="none" stroke="#2a2a2a" stroke-width="1.25" filter="url(#shadowSmall)"></path>
+
+        <!-- Fill with ultra-dark grid -->
+        <path d="M-7.5 -15 L0 15 L7.5 -15 L6 -15 L0 9 L-6 -15 Z" fill="url(#innerGrid)" stroke="#000" stroke-width="0.4"></path>
+      </g>
+    </pattern>
+  </defs>
+
+  <!-- Almost black background -->
+  <rect width="100%" height="100%" fill="#121212"></rect>
+  <rect width="100%" height="100%" fill="url(#tightDiamondPattern)"></rect>
+</svg>
