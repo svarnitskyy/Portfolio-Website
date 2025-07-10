@@ -14,8 +14,16 @@ export default function App() {
       forceColorScheme="dark"
       theme={shadcnTheme}
       cssVariablesResolver={shadcnCssVariableResolver}
+
     >
-      <Container  size="xl">
+      <Container style={{
+        backgroundImage: "url('/Portfolio-Website/public/Images/background.svg')",
+        backgroundRepeat: 'repeat',
+        backgroundSize: '100px',
+        backgroundColor: '#121212',
+        minHeight: '100vh',
+        minWidth: '100vw',
+      }}>
         <Router />
       </Container>
     </MantineProvider>

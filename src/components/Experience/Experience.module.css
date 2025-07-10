@@ -15,7 +15,8 @@
     max-width: 500px;
     overflow: hidden;
     transition: transform 0.1s ease;
-    position: relative
+    position: relative;
+    z-index: 1;
 }
 
 .textbox:hover {
