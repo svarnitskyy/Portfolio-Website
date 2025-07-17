@@ -33,7 +33,7 @@ export default function SwirlBackgroundWrapper({ children }: Props) {
         const rangeY = 100;
         const baseTTL = 50;
         const rangeTTL = 150;
-        const baseSpeed = 0.1;
+        const baseSpeed = 0.5;
         const rangeSpeed = 2;
         const baseRadius = 1;
         const rangeRadius = 4;
@@ -86,7 +86,7 @@ export default function SwirlBackgroundWrapper({ children }: Props) {
             const x2 = x + vx * speed;
             const y2 = y + vy * speed;
             const radius = particleProps[i + 7];
-            const hue = particleProps[i + 8];
+            const hue = particleProps[i + 45];
 
             ctx.save();
             ctx.lineCap = "round";
