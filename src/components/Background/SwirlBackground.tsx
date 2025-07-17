@@ -43,7 +43,7 @@ export default function SwirlBackgroundWrapper({ children }: Props) {
         const xOff = 0.00125;
         const yOff = 0.00125;
         const zOff = 0.0005;
-        const backgroundColor = "hsla(260,40%,5%,1)";
+        const backgroundColor = "hsl(0,0%,0%)";
 
         let center: [number, number] = [0, 0];
         let tick = 0;

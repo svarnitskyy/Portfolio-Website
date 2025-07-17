@@ -41,7 +41,7 @@ const CONTAINER_SIZES: Record<string, string> = {
   xxl: rem("1600px"),
 };
 
-const zincColors: MantineColorsTuple = ["#fafafa","#f4f4f5","#e4e4e7","#d4d4d8","#a1a1aa","#52525b","#3f3f46","#27272a","#18181b","#09090b","#71717A"];
+const zincColors: MantineColorsTuple = ["#fafafa","#f4f4f5","#e4e4e7","#d4d4d8","#a1a1aa","#52525b","#3f3f46","#27272a","#18181b","#000000","#71717A"];
 const slateColors: MantineColorsTuple = ["#f8fafc","#f1f5f9","#e2e8f0","#cbd5e1","#94a3b8","#475569","#334155","#1e293b","#0f172a","#020817","#64748B"];
 const grayColors: MantineColorsTuple = ["#f9fafb","#f3f4f6","#e5e7eb","#d1d5db","#9ca3af","#4b5563","#374151","#1f2937","#111827","#030712","#6B7280"];
 const neutralColors: MantineColorsTuple = ["#fafafa","#f5f5f5","#e5e5e5","#d4d4d4","#a3a3a3","#525252","#404040","#262626","#171717","#0a0a0a","#737373"];
