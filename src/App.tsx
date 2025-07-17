@@ -1,5 +1,5 @@
 import '@mantine/core/styles.css';
-
+import './components/Bulletpoint/bulletpoint.css'
 import { Container, MantineProvider } from '@mantine/core';
 import { shadcnCssVariableResolver } from '@/cssVariableResolver';
 import { Router } from './Router';

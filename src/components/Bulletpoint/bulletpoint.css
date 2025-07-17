@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.bulletpoint::before{
+    content: "\ea99";
+    color: var(--mantine-color-text);
+}
+
+li {
+    color: var(--mantine-color-text);
+    list-style: none;
+    margin: 2px 0;
+}
+
+ul li::before {
+    margin-right: 0.75em;
+    position: relative;
+    font-family: "Material Icons";
+    top: 0.2em;
+}

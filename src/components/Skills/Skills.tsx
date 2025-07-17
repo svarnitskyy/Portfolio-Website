@@ -63,7 +63,7 @@ export function Skills() {
           <Text>
             <ul className={isOneColumn ? styles.onecolumn : styles.twocolumn}>
               {items.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index} className="bulletpoint">{item}</li>
               ))}
             </ul>
           </Text>

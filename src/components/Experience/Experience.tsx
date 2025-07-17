@@ -35,10 +35,10 @@ export function Experience() {
         <div className={styles.imagewrapper}>
           <Image src={experience.image} className={styles.imagebox} />
         </div>
-        <Text className="responsive-text">
+        <Text className={styles.textwrapper}>
           <ul>
             {experience.description.map((bullet) => {
-              return <li>{bullet}</li>;
+              return <li className="bulletpoint">{bullet}</li>;
             })}
           </ul>
         </Text>
