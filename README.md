@@ -1,21 +1,29 @@
 # Porfolio
-## Features
+Template from: https://github.com/mantinedev/vite-template
 
-- [PostCSS](https://postcss.org/) 
-- [TypeScript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/)
-- ESLint
+## Setup
 
-## npm scripts
+First, clone the repo using git:
+```
+git clone https://github.com/svarnitskyy/Portfolio-Website.git
+```
+Second, install the required dependencies.
+```
+npm install
+```
 
-## Build and dev scripts
+## Available Scripts
 
-- `dev` – start development server
-- `build` – build production version of the app
-- `preview` – locally preview production build
+In the project directory, you can run:
 
-### Testing scripts
+### `npm run dev`
 
-- `typecheck` – checks TypeScript types
-- `lint` – runs ESLint
-- `prettier:check` – checks files with Prettier
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm run lint`
+
+Lints the code.
