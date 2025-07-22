@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 /* Checkbox */
 .mantine-Checkbox-root {
     --checkbox-color: var(--mantine-primary-color-filled);
